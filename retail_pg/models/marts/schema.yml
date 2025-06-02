@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: mart_sales_summary
+    description: "Bảng mart tổng hợp doanh số theo khách hàng"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_customer_profile')
+              field: customer_id
+      - name: total_revenue_usd
+        tests:
+          - not_null
+          - column_non_negative  # doanh thu phải >= 0
+      - name: total_quantity
+        tests:
+          - not_null
+          - column_non_negative # sản lượng bán phải >= 0

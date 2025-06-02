@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: int_sales_basic
+    description: "Bảng intermediate xử lý dữ liệu sales đã chuẩn hóa"
+    columns:
+      - name: order_number
+        tests:
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_customer_profile')
+              field: customer_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_product_extended')
+              field: product_id
+      - name: quantity
+        tests:
+          - not_null
+          - column_non_negative #custom test trong macros/quantity_non_negative

@@ -1,0 +1,5 @@
+
+target/
+dbt_packages/
+logs/
+seeds/csv_files/*.csv
