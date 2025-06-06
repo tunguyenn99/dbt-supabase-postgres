@@ -27,7 +27,7 @@ dbt-supabase-postgres/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/dbt-supabase-postgres.git
+git clone https://github.com/tunguyenn99/dbt-supabase-postgres.git
 cd dbt-supabase-postgres
 ```
 
