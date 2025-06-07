@@ -1,6 +1,17 @@
-# 🛠️ DBT Retail PG – Postgres + Supabase + Airflow Project
+# 🚀 Modern Retail Analytics Pipeline – DBT, Supabase & Airflow
 
-This repository provides a complete setup for working with **DBT (Data Build Tool)** using a **Postgres** database hosted on **Supabase**, with automation handled by **Apache Airflow** and **Cosmos**.
+This repository showcases a modern data transformation pipeline designed for retail analytics, leveraging a powerful combination of open-source tools.
+
+---
+
+## 🧰 Tech Stack
+
+- **DBT (Data Build Tool)** – SQL-based transformation framework that allows modular, testable, and version-controlled pipelines.
+- **Supabase** – Open-source backend platform used here to host a managed **PostgreSQL** database for storing raw and transformed retail data.
+- **Apache Airflow** – Workflow orchestration tool used to schedule and monitor data jobs.
+- **Cosmos** – An Airflow extension that simplifies the integration and execution of DBT projects directly within Airflow DAGs.
+
+![Tech Stack](./images/project_architecture.jpg)
 
 ---
 
